@@ -6,7 +6,7 @@
 /*   By: misaev <misaev@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 14:33:50 by misaev            #+#    #+#             */
-/*   Updated: 2022/03/24 11:17:11 by misaev           ###   ########.fr       */
+/*   Updated: 2022/03/31 13:19:27 by misaev           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,13 @@ ScavTrap::ScavTrap(std::string name)
     return;
 }
 
-void ScavTrap::operator=(ScavTrap const &p)
+ScavTrap &ScavTrap::operator=(ScavTrap const &p)
 {
     this->name = p.name;
     this->hp = p.hp;
     this->energy = p.energy;
     this->attack_dmg = p.attack_dmg;
+    return *this;
 }
 
 void ScavTrap::attack(const std::string &target)

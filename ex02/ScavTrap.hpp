@@ -6,7 +6,7 @@
 /*   By: misaev <misaev@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 17:40:14 by misaev            #+#    #+#             */
-/*   Updated: 2022/03/23 17:41:26 by misaev           ###   ########.fr       */
+/*   Updated: 2022/03/31 13:19:38 by misaev           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class ScavTrap : public ClapTrap
     /* Forme canonique */
         ScavTrap();
         ScavTrap(ScavTrap &p);
-        void operator=(ScavTrap const &p);
+        ScavTrap &operator=(ScavTrap const &p);
         ~ScavTrap();
     /* END */ 
 

@@ -6,7 +6,7 @@
 /*   By: misaev <misaev@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 12:05:24 by misaev            #+#    #+#             */
-/*   Updated: 2022/03/22 17:23:01 by misaev           ###   ########.fr       */
+/*   Updated: 2022/03/31 13:09:27 by misaev           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class ClapTrap
         /* Forme canonique */
         ClapTrap();
         ClapTrap(const ClapTrap &p);
-        void operator=(ClapTrap const &p);
+        ClapTrap &operator=(ClapTrap const &p);
         ~ClapTrap();
         /* END */
  

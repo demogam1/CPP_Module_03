@@ -6,7 +6,7 @@
 /*   By: misaev <misaev@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 12:05:21 by misaev            #+#    #+#             */
-/*   Updated: 2022/03/23 17:42:47 by misaev           ###   ########.fr       */
+/*   Updated: 2022/03/31 13:10:11 by misaev           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,13 @@ ClapTrap::ClapTrap(const ClapTrap &p)
    this->attack_dmg = p.attack_dmg;
 }
 
-void ClapTrap::operator=(ClapTrap const &p)
+ClapTrap &ClapTrap::operator=(ClapTrap const &p)
 {
     this->name = p.name;
     this->hp = p.hp;
     this->energy = p.energy;
     this->attack_dmg = p.attack_dmg;
+    return *this;
 }
 
 ClapTrap::~ClapTrap()
